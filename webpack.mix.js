@@ -13,7 +13,4 @@ mix.js('javascript/app.js', 'theme/assets/js').sass('style/style.scss', 'theme',
     require('postcss-import'),
     require('rtlcss'),
     require('autoprefixer'),
-]).sass('style/editor-style.scss', 'theme', [], [
-    require('postcss-import'),
-    require('autoprefixer'),
 ]);
