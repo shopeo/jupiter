@@ -28,3 +28,5 @@ if ( ! function_exists( 'uranus_scripts' ) ) {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'uranus_scripts' );
+
+require get_template_directory() . '/inc/block-patterns.php';
