@@ -1,8 +1,7 @@
 <?php
 if ( ! function_exists( 'uranus_support' ) ) {
 	function uranus_support() {
-		add_theme_support( 'wp-block-styles' );
-		add_editor_style( 'style.css' );
+
 	}
 }
 
