@@ -9,8 +9,11 @@ mix.options({
 mix.js('javascript/app.js', 'theme/assets/js').sass('style/style.scss', 'theme', [], [
     require('postcss-import'),
     require('autoprefixer'),
-]).sass('style/rtl.scss', 'theme', [], [
+]).sass('style/style-rtl.scss', 'theme', [], [
     require('postcss-import'),
     require('rtlcss'),
+    require('autoprefixer'),
+]).sass('style/print.scss', 'theme', [], [
+    require('postcss-import'),
     require('autoprefixer'),
 ]);

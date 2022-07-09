@@ -3246,10 +3246,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./style/rtl.scss":
-/*!************************!*\
-  !*** ./style/rtl.scss ***!
-  \************************/
+/***/ "./style/style-rtl.scss":
+/*!******************************!*\
+  !*** ./style/style-rtl.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./style/print.scss":
+/*!**************************!*\
+  !*** ./style/print.scss ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3370,7 +3383,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/theme/assets/js/app": 0,
-/******/ 			"theme/rtl": 0,
+/******/ 			"theme/print": 0,
+/******/ 			"theme/style-rtl": 0,
 /******/ 			"theme/style": 0
 /******/ 		};
 /******/ 		
@@ -3421,9 +3435,10 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["theme/rtl","theme/style"], () => (__webpack_require__("./javascript/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["theme/rtl","theme/style"], () => (__webpack_require__("./style/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["theme/rtl","theme/style"], () => (__webpack_require__("./style/rtl.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./javascript/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./style/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./style/style-rtl.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./style/print.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

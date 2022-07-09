@@ -1,6 +1,7 @@
 {
     "/theme/assets/js/app.js": "/theme/assets/js/app.js",
-    "/theme/rtl.css": "/theme/rtl.css",
+    "/theme/print.css": "/theme/print.css",
+    "/theme/style-rtl.css": "/theme/style-rtl.css",
     "/theme/style.css": "/theme/style.css",
     "/theme/assets/fonts/fa-brands-400.ttf": "/theme/assets/fonts/fa-brands-400.ttf",
     "/theme/assets/fonts/fa-brands-400.woff2": "/theme/assets/fonts/fa-brands-400.woff2",
