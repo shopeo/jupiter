@@ -23,7 +23,8 @@ if ( ! function_exists( 'uranus_scripts' ) ) {
 		$theme_version  = wp_get_theme()->get( 'Version' );
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 		wp_register_script( 'uranus-script', get_template_directory_uri() . '/assets/js/app.js', array(), $version_string );
-		wp_enqueue_script( 'venus-script' );
+		wp_enqueue_script( 'uranus-script' );
+		wp_script_add_data( 'uranus-script', 'async', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'uranus_scripts' );
