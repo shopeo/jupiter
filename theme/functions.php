@@ -129,3 +129,50 @@ if ( ! function_exists( 'uranus_menus' ) ) {
 
 add_action( 'init', 'uranus_menus' );
 
+if ( ! function_exists( 'uranus_get_custom_logo' ) ) {
+	function uranus_get_custom_logo( $html ) {
+		$logo_id = get_theme_mod( 'custom_logo' );
+		if ( ! $logo_id ) {
+			return $html;
+		}
+		$logo = wp_get_attachment_image_src( $logo_id, 'full' );
+		if ( $logo ) {
+			$logo_width  = esc_attr( $logo[1] );
+			$logo_height = esc_attr( $logo[2] );
+
+			if ( get_theme_mod( 'retina_logo', false ) ) {
+				$logo_width  = floor( $logo_width / 2 );
+				$logo_height = floor( $logo_height / 2 );
+				$search      = array(
+					'/width=\"\d+\"/iU',
+					'/height=\"\d+\"/iU',
+				);
+
+				$replace = array(
+					"width=\"{$logo_width}\"",
+					"height=\"{$logo_height}\"",
+				);
+
+				if ( strpos( $html, ' style=' ) === false ) {
+					$search[]  = '/(src=)/';
+					$replace[] = "style=\"height: {$logo_height}px;\" src=";
+				} else {
+					$search[]  = '/(style="[^"]*)/';
+					$replace[] = "$1 height: {$logo_height}px;";
+				}
+
+				$html = preg_replace( $search, $replace, $html );
+			}
+		}
+
+		return $html;
+	}
+}
+
+add_filter( 'get_custom_logo', 'uranus_get_custom_logo' );
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+}
