@@ -3,6 +3,10 @@ if ( ! function_exists( 'uranus_support' ) ) {
 	function uranus_support() {
 		add_theme_support( 'automatic-feed-links' );
 
+		add_theme_support( 'title-tag' );
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'responsive-embeds' );
+		
 		load_theme_textdomain( 'uranus' );
 	}
 }
