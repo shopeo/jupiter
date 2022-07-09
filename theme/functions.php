@@ -58,10 +58,14 @@ if ( ! function_exists( 'uranus_support' ) ) {
 
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+		$loader = new UranusScriptLoader();
+		add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );
 	}
 }
 
 add_action( 'after_setup_theme', 'uranus_support' );
+
+require_once get_template_directory() . '/classes/UranusScriptLoader.class.php';
 
 if ( ! function_exists( 'uranus_styles' ) ) {
 	function uranus_styles() {
