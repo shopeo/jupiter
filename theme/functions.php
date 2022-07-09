@@ -66,6 +66,8 @@ if ( ! function_exists( 'uranus_support' ) ) {
 add_action( 'after_setup_theme', 'uranus_support' );
 
 require_once get_template_directory() . '/classes/UranusScriptLoader.class.php';
+require_once get_template_directory() . '/classes/UranusNonLatinLanguages.class.php';
+require_once get_template_directory() . '/inc/custom-css.php';
 
 if ( ! function_exists( 'uranus_styles' ) ) {
 	function uranus_styles() {
@@ -86,4 +88,44 @@ if ( ! function_exists( 'uranus_scripts' ) ) {
 		wp_script_add_data( 'uranus-script', 'async', true );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'uranus_scripts' );
+
+if ( ! function_exists( 'uranus_skip_link_focus_fix' ) ) {
+	function uranus_skip_link_focus_fix() {
+		?>
+        <script>
+            /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+                var t, e = location.hash.substring(1);
+                /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+            }, !1);
+        </script>
+		<?php
+	}
+}
+
+add_action( 'wp_print_footer_scripts', 'uranus_skip_link_focus_fix' );
+
+if ( ! function_exists( 'uranus_non_latin_languages' ) ) {
+	function uranus_non_latin_languages() {
+		$custom_css = UranusNonLatinLanguages::get_non_latin_css( 'front-end' );
+
+		if ( $custom_css ) {
+			wp_add_inline_style( 'venus-style', $custom_css );
+		}
+	}
+}
+
+add_action( 'wp_enqueue_scripts', 'uranus_non_latin_languages' );
+
+if ( ! function_exists( 'uranus_menus' ) ) {
+	function uranus_menus() {
+		$locations = array(
+			'primary' => __( 'Primary', 'uranus' )
+		);
+		register_nav_menus( $locations );
+	}
+}
+
+add_action( 'init', 'uranus_menus' );
+
