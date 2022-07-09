@@ -3233,6 +3233,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./style/editor-classic.scss":
+/*!***********************************!*\
+  !*** ./style/editor-classic.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./style/editor-classic-rtl.scss":
+/*!***************************************!*\
+  !*** ./style/editor-classic-rtl.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./style/style.scss":
 /*!**************************!*\
   !*** ./style/style.scss ***!
@@ -3263,6 +3289,32 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************!*\
   !*** ./style/print.scss ***!
   \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./style/editor-block.scss":
+/*!*********************************!*\
+  !*** ./style/editor-block.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./style/editor-block-rtl.scss":
+/*!*************************************!*\
+  !*** ./style/editor-block-rtl.scss ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3383,9 +3435,13 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/theme/assets/js/app": 0,
+/******/ 			"theme/assets/css/editor-block-rtl": 0,
+/******/ 			"theme/assets/css/editor-block": 0,
 /******/ 			"theme/print": 0,
 /******/ 			"theme/style-rtl": 0,
-/******/ 			"theme/style": 0
+/******/ 			"theme/style": 0,
+/******/ 			"theme/assets/css/editor-classic-rtl": 0,
+/******/ 			"theme/assets/css/editor-classic": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -3435,10 +3491,14 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./javascript/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./style/style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./style/style-rtl.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["theme/print","theme/style-rtl","theme/style"], () => (__webpack_require__("./style/print.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./javascript/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./style/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./style/style-rtl.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./style/print.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./style/editor-block.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./style/editor-block-rtl.scss")))
+/******/ 	__webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./style/editor-classic.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["theme/assets/css/editor-block-rtl","theme/assets/css/editor-block","theme/print","theme/style-rtl","theme/style","theme/assets/css/editor-classic-rtl","theme/assets/css/editor-classic"], () => (__webpack_require__("./style/editor-classic-rtl.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -2,6 +2,8 @@
 if ( ! function_exists( 'uranus_support' ) ) {
 	function uranus_support() {
 		add_theme_support( 'automatic-feed-links' );
+
+		load_theme_textdomain( 'uranus' );
 	}
 }
 
