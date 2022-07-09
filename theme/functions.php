@@ -52,6 +52,12 @@ if ( ! function_exists( 'uranus_support' ) ) {
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'responsive-embeds' );
 
+		if ( is_customize_preview() ) {
+
+		}
+
+		add_theme_support( 'customize-selective-refresh-widgets' );
+
 	}
 }
 
