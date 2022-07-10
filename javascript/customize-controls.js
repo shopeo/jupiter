@@ -1,7 +1,3 @@
-(function () {
-
-}(jQuery));
-
 (function ($) {
 
 })(jQuery);

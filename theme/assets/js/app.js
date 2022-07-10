@@ -3215,6 +3215,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+(function ($) {})(jQuery);
+
 /***/ }),
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.min.js":
