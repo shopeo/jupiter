@@ -6,7 +6,7 @@ mix.options({
     processCssUrls: false
 });
 
-mix.js('javascript/app.js', 'theme/assets/js').js('javascript/customize.js', 'theme/assets/js').js('javascript/customize-controls.js', 'theme/assets/js').js('javascript/customize-preview.js', 'theme/assets/js').js('javascript/editor-script-block.js', 'theme/assets/js').sass('style/style.scss', 'theme', [], [
+mix.js('javascript/app.js', 'theme/assets/js').js('javascript/customize.js', 'theme/assets/js').js('javascript/customize-controls.js', 'theme/assets/js').js('javascript/customize-preview.js', 'theme/assets/js').js('javascript/editor-script-block.js', 'theme/assets/js').js('javascript/color-calculations.js', 'theme/assets/js').js('javascript/skip-link-focus-fix.js', 'theme/assets/js').sass('style/style.scss', 'theme', [], [
     require('postcss-import'),
     require('autoprefixer'),
 ]).sass('style/style-rtl.scss', 'theme', [], [

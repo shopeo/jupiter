@@ -4,6 +4,8 @@
     "/theme/assets/js/customize-controls.js": "/theme/assets/js/customize-controls.js",
     "/theme/assets/js/customize-preview.js": "/theme/assets/js/customize-preview.js",
     "/theme/assets/js/editor-script-block.js": "/theme/assets/js/editor-script-block.js",
+    "/theme/assets/js/color-calculations.js": "/theme/assets/js/color-calculations.js",
+    "/theme/assets/js/skip-link-focus-fix.js": "/theme/assets/js/skip-link-focus-fix.js",
     "/theme/assets/css/editor-block-rtl.css": "/theme/assets/css/editor-block-rtl.css",
     "/theme/assets/css/editor-block.css": "/theme/assets/css/editor-block.css",
     "/theme/print.css": "/theme/print.css",

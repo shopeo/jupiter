@@ -1,10 +1,8 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!******************************************!*\
-  !*** ./javascript/customize-controls.js ***!
+  !*** ./javascript/color-calculations.js ***!
   \******************************************/
-(function () {})(jQuery);
 
-(function ($) {})(jQuery);
 /******/ })()
 ;

@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!*******************************************!*\
-  !*** ./javascript/editor-script-block.js ***!
+  !*** ./javascript/skip-link-focus-fix.js ***!
   \*******************************************/
 
 /******/ })()
