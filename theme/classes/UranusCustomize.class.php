@@ -62,36 +62,24 @@ if ( ! class_exists( 'UranusCustomize' ) ) {
 			/**
 			 * Theme Options
 			 */
+			$wp_customize->add_section( 'header', array(
+				'title'      => __( 'Header', 'venus' ),
+				'priority'   => 80,
+				'capability' => 'edit_theme_options',
+			) );
 
-			$wp_customize->add_section(
-				'options',
-				array(
-					'title'      => __( 'Theme Options', 'uranus' ),
-					'priority'   => 40,
-					'capability' => 'edit_theme_options',
-				)
-			);
+			$wp_customize->add_setting( 'enable_header_search', array(
+				'capability'        => 'edit_theme_options',
+				'default'           => false,
+				'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
+			) );
 
-			/* Enable Header Search ----------------------------------------------- */
-
-			$wp_customize->add_setting(
-				'enable_header_search',
-				array(
-					'capability'        => 'edit_theme_options',
-					'default'           => true,
-					'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
-				)
-			);
-
-			$wp_customize->add_control(
-				'enable_header_search',
-				array(
-					'type'     => 'checkbox',
-					'section'  => 'options',
-					'priority' => 10,
-					'label'    => __( 'Show search in header', 'uranus' ),
-				)
-			);
+			$wp_customize->add_control( 'enable_header_search', array(
+				'type'     => 'checkbox',
+				'section'  => 'header',
+				'priority' => 10,
+				'label'    => __( 'Show search in header', 'venus' ),
+			) );
 		}
 
 		public static function sanitize_accent_accessible_colors( $value ) {
