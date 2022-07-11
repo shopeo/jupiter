@@ -3,24 +3,6 @@
 if ( ! class_exists( 'UranusCustomize' ) ) {
 	class UranusCustomize {
 		public static function register( $wp_customize ) {
-			$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
-			$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
-
-			$wp_customize->selective_refresh->add_partial(
-				'blogname',
-				array(
-					'selector'        => '.site-title a',
-					'render_callback' => 'uranus_customize_partial_blogname',
-				)
-			);
-
-			$wp_customize->selective_refresh->add_partial(
-				'blogdescription',
-				array(
-					'selector'        => '.site-description',
-					'render_callback' => 'uranus_customize_partial_blogdescription',
-				)
-			);
 
 			$wp_customize->selective_refresh->add_partial(
 				'custom_logo',
@@ -108,18 +90,6 @@ if ( ! class_exists( 'UranusCustomize' ) ) {
 	}
 
 	add_action( 'customize_register', array( 'UranusCustomize', 'register' ) );
-}
-
-if ( ! function_exists( 'uranus_customize_partial_blogname' ) ) {
-	function uranus_customize_partial_blogname() {
-		bloginfo( 'name' );
-	}
-}
-
-if ( ! function_exists( 'uranus_customize_partial_blogdescription' ) ) {
-	function uranus_customize_partial_blogdescription() {
-		bloginfo( 'description' );
-	}
 }
 
 if ( ! function_exists( 'uranus_customize_partial_site_logo' ) ) {
