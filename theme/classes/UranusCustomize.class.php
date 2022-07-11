@@ -60,7 +60,7 @@ if ( ! class_exists( 'UranusCustomize' ) ) {
 			);
 
 			/**
-			 * Theme Options
+			 * Header Options
 			 */
 			$wp_customize->add_section( 'header', array(
 				'title'      => __( 'Header', 'venus' ),
