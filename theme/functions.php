@@ -47,7 +47,7 @@ if ( ! function_exists( 'uranus_support' ) ) {
 			)
 		);
 
-		load_theme_textdomain( 'uranus' );
+		load_theme_textdomain( 'uranus', get_template_directory() . '/languages' );
 
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'responsive-embeds' );
