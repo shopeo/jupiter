@@ -35,5 +35,6 @@
 - [ ] Heroic Table of Contents
 - [ ] Ultimate Blocks
 - [ ] Hubspot
+- [ ] All in One SEO
 
 ## About
