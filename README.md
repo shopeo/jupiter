@@ -14,5 +14,10 @@
 - [x] @ryangjchandler/alpine-clipboard
 - [ ] typed.js
 - [ ] lazysizes
+- [ ] @ciar4n/izmir
+- [ ] hover.css
+- [ ] swiper
+- [ ] webkul-micron
+- [ ] counterup2
 
 ## About

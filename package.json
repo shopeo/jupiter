@@ -28,6 +28,7 @@
     "@alpinejs/mask": "^3.10.2",
     "@alpinejs/morph": "^3.10.2",
     "@alpinejs/persist": "^3.10.2",
+    "@ciar4n/izmir": "^1.0.1",
     "@fortawesome/fontawesome-free": "^6.1.1",
     "@popperjs/core": "^2.11.5",
     "@ryangjchandler/alpine-clipboard": "^2.2.0",
@@ -35,6 +36,8 @@
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.7",
     "bootstrap": "^5.1.3",
+    "counterup2": "^2.0.2",
+    "hover.css": "^2.3.2",
     "laravel-mix": "^6.0.49",
     "lazysizes": "^5.3.2",
     "luxon": "^3.0.1",
@@ -44,6 +47,8 @@
     "rtlcss": "^3.5.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
-    "typed.js": "^2.0.12"
+    "swiper": "^8.3.0",
+    "typed.js": "^2.0.12",
+    "webkul-micron": "^1.1.6"
   }
 }
