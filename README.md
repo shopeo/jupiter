@@ -38,3 +38,7 @@
 - [ ] All in One SEO
 
 ## About
+
+## Ref
+
+https://github.com/TGMPA/TGM-Plugin-Activation/
