@@ -215,3 +215,17 @@ if ( ! function_exists( 'uranus_customize_preview_init' ) ) {
 }
 
 add_action( 'customize_preview_init', 'uranus_customize_preview_init' );
+
+
+if ( ! function_exists( 'uranus_posts_per_page' ) ) {
+	function uranus_posts_per_page( $query ) {
+		if ( ! is_admin() ) {
+			if ( $query->is_search ) {
+				$query->set( 'post_type', 'post' );
+			}
+			$query->set( 'ignore_sticky_posts', 1 );
+		}
+	}
+}
+
+add_action( 'pre_get_posts', 'uranus_posts_per_page' );
