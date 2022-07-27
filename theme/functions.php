@@ -4,7 +4,7 @@ if ( ! function_exists( 'uranus_support' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 
 		add_theme_support( 'custom-background', array(
-			'default-color' => 'F5EFE0',
+			'default-color' => '#ffffff',
 		) );
 
 		global $content_width;
