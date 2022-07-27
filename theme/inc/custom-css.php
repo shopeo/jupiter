@@ -17,3 +17,9 @@ if ( ! function_exists( 'uranus_generate_css' ) ) {
 		return $return;
 	}
 }
+
+if ( ! function_exists( 'uranus_get_customizer_css' ) ) {
+	function uranus_get_customizer_css( $type = 'front-end' ) {
+		return ob_get_clean();
+	}
+}
