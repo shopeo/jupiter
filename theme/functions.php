@@ -75,7 +75,7 @@ require_once get_template_directory() . '/inc/custom-css.php';
 if ( ! function_exists( 'uranus_styles' ) ) {
 	function uranus_styles() {
 		$theme_version = wp_get_theme()->get( 'Version' );
-		wp_enqueue_style( 'uranus-style', get_stylesheet_uri(), array(), $theme_version );
+		wp_enqueue_style( 'uranus-style', get_template_directory_uri() . '/style.css', array(), $theme_version );
 		wp_style_add_data( 'uranus-style', 'rtl', 'replace' );
 		wp_add_inline_style( 'uranus-style', uranus_get_customizer_css( 'front-end' ) );
 		// Add print css
