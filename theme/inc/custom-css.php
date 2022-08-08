@@ -20,6 +20,8 @@ if ( ! function_exists( 'uranus_generate_css' ) ) {
 
 if ( ! function_exists( 'uranus_get_customizer_css' ) ) {
 	function uranus_get_customizer_css( $type = 'front-end' ) {
+		ob_start();
+
 		return ob_get_clean();
 	}
 }
